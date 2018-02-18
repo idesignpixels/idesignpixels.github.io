@@ -16,8 +16,8 @@
 title: idesignpixels.com
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  idesignpixels.com is a creative web development blog that shares ideas,
-  helpful resources and tips on front end technologies.
+  idesignpixels is a creative web development blog that shares ideas,
+  helpful resources, tips and tricks on front end dev and design.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: idesignpixels
