@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Custom input range components with pure CSS"
+title:  "Style input range elements with pure CSS"
 date:   2018-02-04 18:25:23 +0000
-categories: css
+categories: css html
 ---
 
-### Turn the boring default browser styles into responsive, bespoke components using css.
+### Turn the boring default browser styles into bespoke components using css.
 
 The range input was introduced in HTML5 but the style differs wildly between browsers in this post I will talk about how to style this element to look the same in all modern browsers.
 The idea is to have a friendly looking range input and label that responds to the users input, the user gets updated feedback on focus, hover, and change.
