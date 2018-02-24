@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $lightTeal;
+  color: $brand-color;
   text-decoration: none;
 
   &:visited {
@@ -110,7 +110,7 @@ a {
   }
 
   &:hover {
-    color: $text-color;
+    color: $brand-color;
   }
 
   .social-media-list &:hover {
@@ -118,6 +118,55 @@ a {
   }
 }
 
+/**
+* Buttons
+*/
+button {
+  background-color: transparent;
+  padding: 10px 20px;
+  border-color: $lightTeal;
+  border-radius: 4px;
+  color: $lightTeal;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $lightTeal;
+    color: $teal;
+  }
+}
+
+/**
+* Input
+*/
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 20px 0px;
+  border: 1px solid $lightTeal;
+  border-radius: 4px;
+  padding: 10px 10px;
+  background-color: transparent;
+  font-size: $base-font-size;
+}
+
+input[type="submit"] {
+  color: $lightTeal;
+  font-size: $small-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $lightTeal;
+    color: $white;
+  }
+}
 
 /**
  * Blockquotes
