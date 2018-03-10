@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Fix Safari web inspector disconnecting from device"
+title:  "iOS Inspector Troubleshoot"
+banner: https://i.imgur.com/2i0w2l3.jpg
 date:   2018-02-22 20:20:00 +0000
+author: Dale
+intro: Having problems with your iOS device disconnecting when your trying to inspect with Safari? in this post we list what could be the cause and how to fix it.
 categories: safari ios osx xcode
 ---
-
 
 One great thing about testing browser based apps or websites on the iPhone or iPad is that you can inspect it using Safari inspector.
 
