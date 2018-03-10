@@ -276,6 +276,19 @@
 .page-content {
   flex: 1;
   padding: $spacing-unit 0;
+  @media only screen and (min-width: 720px) {
+    background-color: $grey-color-lightest;
+  }
+}
+
+.page-content-wrapper {
+  @media only screen and (min-width: 720px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $white;
+    border-radius: 4px;
+    border: 1px solid $grey-color-light;
+  }
 }
 
 .page-heading {
@@ -290,19 +303,31 @@
   margin-left: 0;
   list-style: none;
 
-  > li {
+  > .post-preview {
     margin-bottom: $spacing-unit;
+
+    .post-preview-banner {
+      box-sizing: border-box;
+      background-color: $grey-color-light;
+      border: 1px solid $grey-color-light;
+      margin-bottom: calc(#{$spacing-unit} / 2);
+    }
   }
 }
 
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
+  text-align: center;
 }
 
 .post-link {
   display: block;
-  @include relative-font-size(1.5);
+  @include relative-font-size(1.25);
+}
+
+.rss-subscribe {
+  text-align: center;
 }
 
 
@@ -314,13 +339,17 @@
   margin-bottom: $spacing-unit;
 }
 
+.post-banner {
+  margin-bottom: calc(#{$spacing-unit} / 2);
+}
+
 .post-title {
-  @include relative-font-size(2.625);
+  @include relative-font-size(2);
   letter-spacing: -1px;
   line-height: 1;
 
   @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
+    @include relative-font-size(1.75);
   }
 }
 
@@ -328,10 +357,10 @@
   margin-bottom: $spacing-unit;
 
   h2 {
-    @include relative-font-size(2);
+    @include relative-font-size(1.75);
 
     @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
+      @include relative-font-size(1.625);
     }
   }
 
