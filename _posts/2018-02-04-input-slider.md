@@ -62,6 +62,9 @@ input[type="range"] {
 This will make the component invisible but it's still there, now you just need to add your custom styles!
 Start by giving it 100% width, some height and a background-color, I have also added border radius.
 We also want to animate the range track depending on whether its focused or being hovered upon, using css transitions you can easily apply these styles, I have added `transition: background-color 0.25s ease;` this will animate the track color when it changes.
+
+{% include article-adsense.html %}
+
 ```css
 input[type="range"]:hover {
   background-color: #4CAF50;
