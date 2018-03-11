@@ -30,6 +30,8 @@ Here is my markup it is a wrapper thats contains a label div with an output cont
 The output element can be used to display the value of the range input by using the `oninput` attribute on the input element and using the id of the output element, in this case `rangeoutput.value = value`.
 You can also use the "onchange" attribute the same way but the downside to this is that it only updates when the user has released the slider, this means the user can’t see the current value whilst dragging, choose the best one for your use case.
 
+{% include article-adsense.html %}
+
 In order to style the range input first you must remove the default browser styles, this is done with `appearance: none;` on `input[type=“range”]`, you may need to add browser prefixes for older/unsupported browsers.
 ```css
 .rangeWrapper {
@@ -62,8 +64,6 @@ input[type="range"] {
 This will make the component invisible but it's still there, now you just need to add your custom styles!
 Start by giving it 100% width, some height and a background-color, I have also added border radius.
 We also want to animate the range track depending on whether its focused or being hovered upon, using css transitions you can easily apply these styles, I have added `transition: background-color 0.25s ease;` this will animate the track color when it changes.
-
-{% include article-adsense.html %}
 
 ```css
 input[type="range"]:hover {

@@ -22,6 +22,8 @@ One great thing about testing browser based apps or websites on the iPhone or iP
 
 Unfortunately if you do this for some time you will undoubtably run in to an issue where you go to inspect the device then safari disconnects from it (no longer in the menu).
 
+{% include article-adsense.html %}
+
 You may have tried to restart Safari or re-plugin the device, however this doesn't always work.
 In this article I talk about several methods that I have tried to remedy this problem.
 
