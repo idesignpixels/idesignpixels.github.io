@@ -10,7 +10,7 @@ categories: safari ios osx xcode
 
 One great thing about testing browser based apps or websites on the iPhone or iPad is that you can inspect it using Safari inspector.
 
-### Getting started
+## Getting started
 
 1. In OSX open Safari and go to **"Safari > preferences > advanced"** and tick **"Show develop menu in menu bar"**.
 
@@ -18,7 +18,7 @@ One great thing about testing browser based apps or websites on the iPhone or iP
 
 3. Inspect your device by plugging it in to your mac and going to **"Develop > your-device-name"** in the toolbar.
 
-### The problem
+## The problem
 
 Unfortunately if you do this for some time you will undoubtably run in to an issue where you go to inspect the device then safari disconnects from it (no longer in the menu).
 
