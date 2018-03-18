@@ -308,6 +308,7 @@
 
     .post-preview-banner {
       box-sizing: border-box;
+      height: auto;
       background-color: $grey-color-light;
       border: 1px solid $grey-color-light;
       margin-bottom: calc(#{$spacing-unit} / 2);
@@ -340,6 +341,7 @@
 }
 
 .post-banner {
+  height: auto;
   margin-bottom: calc(#{$spacing-unit} / 2);
 }
 
