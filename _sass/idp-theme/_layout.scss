@@ -19,6 +19,7 @@
 
 .header-logo {
   height: 32px;
+  width: 32px;
   margin-right: $spacing-unit / 2;
 }
 
@@ -183,6 +184,7 @@
   align-items: center;
 
   .author-avatar {
+    height: auto;
     border-radius: 50%;
     margin-right: 16px;
     @include media-query($on-laptop) {
