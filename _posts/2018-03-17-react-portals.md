@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "React Portals"
-banner: https://i.imgur.com/204oY5E.jpg
+image: https://i.imgur.com/204oY5E.jpg
 date:   2018-03-17 20:20:00 +0000
 author: Dale
 intro: Today I look at the new React portals feature that allows you to render modals outside of the parent component.
@@ -62,7 +62,8 @@ There are a few extras in here that we'll discuss later but the main part is wha
 
 Pretty easy right? simply return the `ReactDOM.createPortal` method with the content and where you want to render it!
 
-![React portal modal example](https://i.imgur.com/ruwSbgO.png "React portal modal")
+<img src="https://i.imgur.com/ruwSbgO.png" alt="React portal modal example" title="React portal modal" width="746" height="522" />
+
 So how to create a modal? it depends on the style your after but I'm going with a simple centered box to render a card with header, message, action buttons. It will also need a backdrop that makes the modal "pop off" the screen.
 
 {% include article-adsense.html %}
