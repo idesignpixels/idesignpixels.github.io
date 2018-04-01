@@ -11,17 +11,19 @@ example:
 categories: react js es6
 ---
 
-{% include demo-code-buttons.html %}
+React portals were recently added in version 16, this enables you to render children outside of the parent component.
 
 > Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
 
 [- React Documentation](https://reactjs.org/docs/portals.html)
 
-Portals enable you to render children outside of the parent component, whats so great about that?
+What's so great about that?
 Well the most common use cases are going to be components that need to be rendered at a top level but also need to retrieve props from nested parents, a good example is a modal.
 
 So how do you use this new feature?
 lets render a modal with React portal...
+
+{% include demo-code-buttons.html %}
 
 ```html
 <!-- index.html -->
