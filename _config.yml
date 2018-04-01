@@ -24,6 +24,11 @@ google_analytics: UA-53877948-5
 google_adsense: ca-pub-7870884684574206
 permalink: pretty
 rss: /feed.xml
+facebook:
+ app_id: 539094969817505
+ publisher: 782878081767426
+twitter:
+  username: idesignpixels
 twitter_username: idesignpixels
 github_username:  idesignpixels
 facebook_username:  idesignpixels
