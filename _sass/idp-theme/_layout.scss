@@ -306,6 +306,8 @@
   list-style: none;
 
   > .post-preview {
+    padding-bottom: $spacing-unit;
+    border-bottom: 1px solid $grey-color-light;
     margin-bottom: $spacing-unit;
 
     .post-preview-banner {
@@ -314,6 +316,10 @@
       background-color: $grey-color-light;
       border: 1px solid $grey-color-light;
       margin-bottom: calc(#{$spacing-unit} / 2);
+    }
+
+    p {
+      margin-bottom: 0px;
     }
   }
 }
