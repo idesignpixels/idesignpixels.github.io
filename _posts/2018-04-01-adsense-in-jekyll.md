@@ -52,7 +52,7 @@ Next create a new google-adsense.html in your includes then paste the code that 
 {% endraw %}
 
 Now in your head you can include the "google-adsense.html".
-This by it self is enough to get AdSense working working in your site and if you look at the template above it will only display in production environment on blog posts not on contact pages etc.
+This by it self is enough to get AdSense working in your site and if you look at the template above it will only display in production environment on blog posts not on contact pages etc.
 If all went well you should see an ad like the one for this article below.
 
 {% include article-adsense.html %}
@@ -68,7 +68,7 @@ I prefer to add my own "ad unit", there are a few to choose from but the most po
 
 If you create a new ad unit select the type you want, I'm going to use an "in-article ad" in this example, You will see a page that lets you customise the look and feel, adjust these settings to meet your needs and click "Save and get code".
 
-This will give your  code snippet similar to the previous auto ads example, repeate the same steps as above (create a include with code snippet, replace your publisher id with the "google_adsense" config variable).
+This will give you a code snippet similar to the previous auto ads example, repeat the same steps as above (create a include with code snippet, replace your publisher id with the "google_adsense" config variable).
 
 {% raw %}
 ```html
@@ -90,7 +90,7 @@ This will give your  code snippet similar to the previous auto ads example, repe
 
 I have added the environment and page layout check inside the include instead of where I use it, this is because we're going to be putting this include in the middle of blog posts and want to minimise the amount of unrelated logic and abstract the ad code away into this include.
 
-You may have also noticed that the first script tag is the same as the one from the auto ads snippet, I recommend that whether or not you also use auto ads to only include this script tag once in the head. This is because you may decide to have more than one ad in a post which mens this include would have included it more than once.
+You may have also noticed that the first script tag is the same as the one from the auto ads snippet, I recommend that whether or not you also use auto ads to only include this script tag once in the head. This is because you may decide to have more than one ad in a post which means this include would have included it more than once.
 
 ```html
 <!-- _includes/head.html -->
