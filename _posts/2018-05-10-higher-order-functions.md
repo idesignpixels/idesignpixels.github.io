@@ -64,6 +64,8 @@ render() {
 }
 ```
 
+{% include article-adsense.html %}
+
 ### filter
 
 Filter although similar to map is critically different as it returns a new filtered version of the original array rather than transforming each value.
