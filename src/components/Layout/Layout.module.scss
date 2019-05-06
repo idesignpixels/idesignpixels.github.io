@@ -1,0 +1,43 @@
+@import '../../theme/base';
+@import '../../theme/dimensions';
+@import '../../theme/colors';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $greyLightest;
+}
+
+.content {
+  @include padded-container;
+  flex-grow: 1;
+  width: 100%;
+  background-color: $white;
+  border: 1px solid $greyLight;
+}
+
+@supports (display: grid) {
+  .container {
+    display: grid;
+    grid-template-rows: 64px 1fr auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "content" "footer";
+    transition: all .25s;
+
+    .header { grid-area: header; }
+    .content {
+      grid-area: content;
+
+      .pageTitle {
+        margin: $gutter 0px;
+      }
+
+      @media only screen and (min-width: $tablet) {
+        margin-top: $gutterLarge;
+        margin-bottom: $gutterLarge;
+      }
+    }
+    .footer { grid-area: footer; }
+  }
+}
