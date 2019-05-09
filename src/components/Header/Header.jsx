@@ -61,6 +61,7 @@ export default class Header extends React.Component {
         to={path}
         className={styles.navLink}
         activeClassName={styles.activeNavLink}
+        partiallyActive={path.includes('posts')}
       >
         {label}
       </Link>
