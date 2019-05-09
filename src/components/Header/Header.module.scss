@@ -14,6 +14,7 @@
   background-color: $teal;
   box-sizing: border-box;
   opacity: 1;
+  overflow: hidden;
   z-index: 10;
   transition: opacity .5s ease, height .5s, top .5s, background-color .5s;
 
