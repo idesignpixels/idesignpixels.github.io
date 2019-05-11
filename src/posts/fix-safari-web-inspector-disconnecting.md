@@ -4,7 +4,7 @@ title:  "iOS Inspector Troubleshoot"
 image: "./safari-troubleshoot-header-LG.jpg"
 date:   2018-02-22 20:20:00 +0000
 author: Dale
-categories: safari ios osx xcode
+categories: ["safari", "ios", "osx", "xcode"]
 ---
 
 Having problems with your iOS device disconnecting when your trying to inspect with Safari? in this post we list what could be the cause and how to fix it.

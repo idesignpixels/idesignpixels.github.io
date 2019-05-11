@@ -4,7 +4,7 @@ title:  "Styling Input Range"
 image: "./styling-input-range-LG.jpg"
 date:   2018-02-04 18:25:23 +0000
 author: Dale
-categories: css html
+categories: ["css", "html"]
 ---
 
 HTML5 input range fields are great but they looks different in every browser, in this post we style them to be uniform across browsers.

@@ -4,7 +4,7 @@ title:  "React Portals"
 image: "./react-portals-header-LG.jpg"
 date:   2018-03-17 20:20:00 +0000
 author: Dale
-categories: react js es6
+categories: ["react", "javascript", "es6"]
 ---
 
 Today I look at the new React portals feature that allows you to render modals outside of the parent component.

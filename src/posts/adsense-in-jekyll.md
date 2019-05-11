@@ -4,7 +4,7 @@ title:  "AdSense in Jekyll"
 image: "./adsense-in-jekyll-LG.jpg"
 date:   2018-04-01 12:30:00 +0000
 author: Dale
-categories: adsense jekyll
+categories: ["adsense", "jekyll"]
 ---
 
 How to add Google AdSense to your Jekyll site the right way.

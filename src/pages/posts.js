@@ -42,8 +42,6 @@ const PostsPage = () => {
       }
     }
   `);
-
-  console.log(data);
   
   return (
     <Layout pageTitle="All posts">

@@ -4,7 +4,7 @@ title:  "Moving to Gatsby from Jekyll"
 image: "./gatsby-from-jekyll-header-LG.jpg"
 date:   2019-05-06 20:20:00 +0000
 author: Dale
-categories: gatsby javascript jekyll
+categories: ["gatsby", "javascript", "jekyll"]
 ---
 
 I talk about why I decided to move idesignpixels.com from a static [Jekyll](https://jekyllrb.com/) site to a static [Gatsby](https://www.gatsbyjs.org/) site and why you may also want to.

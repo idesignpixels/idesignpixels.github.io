@@ -4,7 +4,7 @@ title:  "Higher Order Functions"
 image: "./hoc-header-LG.jpg"
 date:   2018-05-10 20:20:00 +0000
 author: Dale
-categories: js es6
+categories: ["javascript", "es6"]
 ---
 
 A post that tries to help demystify how higher order functions work by looking at ones you probably already use.

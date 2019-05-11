@@ -85,6 +85,7 @@ export default class Header extends React.Component {
           <ul className={styles.menu}>
             <li>{createNavLink('/', 'Home')}</li>
             <li>{createNavLink('/posts', 'Posts')}</li>
+            <li>{createNavLink('/categories', 'Categories')}</li>
             <li>{createNavLink('/contact', 'Contact')}</li>
           </ul>
         </div>

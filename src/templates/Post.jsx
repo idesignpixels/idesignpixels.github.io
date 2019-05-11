@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 import Layout from '../components/Layout/Layout';
 import AdSensePrimary from '../components/AdSensePrimary/AdSensePrimary';
 import Button from '../components/Button/Button';
+import CategoryLink from '../components/CategoryLink/CategoryLink';
 import SEO from '../components/seo';
 
 export const query = graphql`
@@ -21,6 +22,8 @@ export const query = graphql`
         date (
           formatString: "MMM Do, YYYY",
         )
+        author
+        categories
         image {
           childImageSharp {
             fluid {
@@ -51,7 +54,7 @@ const Post = (props) => {
   
   return (
     <Layout>
-      <SEO title="Post" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title={frontmatter.title} keywords={frontmatter.categories} />
       <Img
         fluid={frontmatter.image.childImageSharp.fluid}
         alt={frontmatter.title}
@@ -59,6 +62,16 @@ const Post = (props) => {
       <br />
       <h1>{frontmatter.title}</h1>
       <p>{frontmatter.date}</p>
+      <div>Categories:</div>
+      <div>
+        {frontmatter.categories.map(category => (
+          <CategoryLink
+            to={`/category/${category}`}
+            label={category}
+          />
+        ))}
+      </div>
+      <br />
       {
         renderAst(htmlAst)
       }

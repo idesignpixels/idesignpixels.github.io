@@ -1,0 +1,24 @@
+@import "../../theme/colors";
+@import '../../theme/dimensions';
+
+.category {
+  display: inline-block;
+  margin: $gutterSmall;
+  margin-left: 0px;
+  border: 1px solid $lightTeal;
+  border-radius: 4px;
+  padding: $gutterSmall $gutter;
+  color: $lightTeal;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all .25s ease;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $lightTeal;
+  }
+}
