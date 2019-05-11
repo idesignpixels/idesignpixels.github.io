@@ -21,7 +21,7 @@ const CategoriesPage = ({
       {group.map(category => (
         <CategoryLink
           key={category.fieldValue}
-          to={`/category/${kebabCase(category.fieldValue)}/`}
+          to={`/categories/${kebabCase(category.fieldValue)}/`}
           label={`${category.fieldValue} (${category.totalCount})`}
         />
       ))}

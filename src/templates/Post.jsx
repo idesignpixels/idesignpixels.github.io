@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import rehypeReact from 'rehype-react'
 import Img from 'gatsby-image';
+import kebabCase from "lodash/kebabCase";
 import Layout from '../components/Layout/Layout';
 import AdSensePrimary from '../components/AdSensePrimary/AdSensePrimary';
 import Button from '../components/Button/Button';
@@ -43,7 +44,7 @@ export const query = graphql`
 
 const Post = (props) => {
   const { frontmatter, htmlAst } = props.data.markdownRemark;
-  
+
   const renderAst = new rehypeReact({
     createElement: React.createElement,
     components: {
@@ -51,7 +52,7 @@ const Post = (props) => {
       'button': Button,
     },
   }).Compiler;
-  
+
   return (
     <Layout>
       <SEO title={frontmatter.title} keywords={frontmatter.categories} />
@@ -66,7 +67,8 @@ const Post = (props) => {
       <div>
         {frontmatter.categories.map(category => (
           <CategoryLink
-            to={`/category/${category}`}
+            key={category}
+            to={`/categories/${kebabCase(category)}`}
             label={category}
           />
         ))}

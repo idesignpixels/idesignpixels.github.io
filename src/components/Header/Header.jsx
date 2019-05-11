@@ -48,7 +48,7 @@ export default class Header extends React.Component {
   render() {
     const { menuOpen, hide, className } = this.state;
     const { title } = this.props;
-    
+
     const headerClasses = [
       styles.header,
       menuOpen && styles.menuOpen,
@@ -61,7 +61,7 @@ export default class Header extends React.Component {
         to={path}
         className={styles.navLink}
         activeClassName={styles.activeNavLink}
-        partiallyActive={path.includes('posts')}
+        partiallyActive={['posts', 'categories'].includes(path.substring(1))}
       >
         {label}
       </Link>
