@@ -1,0 +1,1 @@
+{"errors":[{"message":"Expected type MarkdownRemarkFieldsEnum, found frontmatter___categories; Did you mean the enum value frontmatter___date, frontmatter___author, frontmatter___title, frontmatter___layout, or frontmatter___image___id?","locations":[{"line":8,"column":18}]}],"pageContext":{"isCreatedByStatefulCreatePages":true}}
